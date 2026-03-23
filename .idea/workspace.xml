@@ -5,20 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6eb4f769-cc98-4842-8664-f7a333e8191a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ota_v2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test_RTSP.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test_RTSP.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test_yolo.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test_yolo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_train.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fire.64.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mqtt_publish.py" beforeDir="false" afterPath="$PROJECT_DIR$/mqtt_publish.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ota.py" beforeDir="false" afterPath="$PROJECT_DIR$/ota.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/respond.py" beforeDir="false" afterPath="$PROJECT_DIR$/respond.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/saved_to_redis.py" beforeDir="false" afterPath="$PROJECT_DIR$/saved_to_redis.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/server.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/train_model.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/yolov8s.pt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6eb4f769-cc98-4842-8664-f7a333e8191a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ota_v2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ota.py" beforeDir="false" afterPath="$PROJECT_DIR$/ota.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ota_v2.py" beforeDir="false" afterPath="$PROJECT_DIR$/ota_v2.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,24 +37,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.Test_RTSP.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Test_yolo.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Test_yolo_detect_fire.executor&quot;: &quot;Run&quot;,
-    &quot;Python.mqtt_publish.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ota.executor&quot;: &quot;Run&quot;,
-    &quot;Python.respond.executor&quot;: &quot;Run&quot;,
-    &quot;Python.saved_to_redis.executor&quot;: &quot;Run&quot;,
-    &quot;Python.server.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/pc/OneDrive/Máy tính/work/New folder&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.Test_RTSP.executor": "Run",
+    "Python.Test_yolo.executor": "Run",
+    "Python.Test_yolo_detect_fire.executor": "Run",
+    "Python.mqtt_publish.executor": "Run",
+    "Python.ota.executor": "Run",
+    "Python.ota_v2.executor": "Run",
+    "Python.respond.executor": "Run",
+    "Python.saved_to_redis.executor": "Run",
+    "Python.server.executor": "Run",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/pc/OneDrive/Máy tính/work/New folder"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Baitap\work\firmware\Test_production\mqtt_publish" />
@@ -63,29 +64,7 @@
       <recent name="D:\Baitap\work\firmware\Test_production\mqtt_publish" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.mqtt_publish">
-    <configuration name="Test_RTSP" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="mqtt_publish" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Test_RTSP.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.ota_v2">
     <configuration name="Test_yolo" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="mqtt_publish" />
       <option name="ENV_FILES" value="" />
@@ -152,6 +131,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="ota_v2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="mqtt_publish" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ota_v2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="respond" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="mqtt_publish" />
       <option name="ENV_FILES" value="" />
@@ -176,11 +177,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.ota_v2" />
         <item itemvalue="Python.mqtt_publish" />
         <item itemvalue="Python.ota" />
         <item itemvalue="Python.respond" />
         <item itemvalue="Python.Test_yolo" />
-        <item itemvalue="Python.Test_RTSP" />
       </list>
     </recent_temporary>
   </component>

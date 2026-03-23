@@ -9,7 +9,7 @@ import ota
 
 Current_env = "TEST" #  PROD or DEV or TEST - môi trường thiết bị hiện tại
 Updated_env = "PROD" # PROD or DEV or TEST - môi trường sau khi OTA
-Serial_number = "EV8cfe4390dc" # serial_number của thiết bị
+Serial_number = "abc" # serial_number của thiết bị
 broker_address = "broker.chtlab.us"
 link_file_bin = "http://ota1.chtlab.us/dev/Essen_4g_prod/Essen_4g_prod_v1_0_3.bin"
 my_key = bytes([
@@ -24,6 +24,7 @@ my_key = bytes([
 def on_connect(client, userdata, flags, rc):
     cur_topic = "PUP4G/SmartEVsafe"
     upd_topic = "PUP4G/SmartEVsafe"
+    ota_topic = "abc"
     if Current_env == "PROD":
         cur_topic = "PUP4G/SmartEVsafe"
         ota_topic = "PEVsafe_"+Serial_number
@@ -43,7 +44,7 @@ def on_connect(client, userdata, flags, rc):
         print("✅ Kết nối thành công!")
         client.subscribe(cur_topic)
         client.subscribe(upd_topic)
-        ota.send_message_ota(Serial_number,link_file_bin)
+        ota.send_message_ota(Serial_number, ota_topic, link_file_bin)
     else:
         print(f"❌ Kết nối thất bại, mã lỗi: {rc}")
 def on_message(client, userdata, msg):
@@ -52,7 +53,7 @@ def on_message(client, userdata, msg):
         data_json = json.loads(payload)
         data_decrypt=respond.giai_ma_chuan(data_json,my_key)
         ser = data_json["serial_number"]
-        print(ser)
+        # print(ser)
         if ser == Serial_number:
             print("Data decryptred: ", data_decrypt)
 

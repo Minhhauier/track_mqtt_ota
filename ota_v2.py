@@ -55,6 +55,7 @@ def on_message(client, userdata, msg):
         ser = data_json["serial_number"]
         # print(ser)
         if ser == Serial_number:
+            print(ser)
             print("Data decryptred: ", data_decrypt)
 
     except Exception as e:

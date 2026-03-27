@@ -81,6 +81,7 @@ def on_connect(client, userdata, flags, rc):
         sub_topic = "TEVsafe_"+serial_number
         client.subscribe(sub_topic)
         client.subscribe("PUP4G/SmartEVsafe")
+        client.subscribe("PUP/SmartEVsafe")
         # client.subscribe("CAMAI/Detectfire")
         # client.subscribe("EVsafe_EV4f00a2bf68")
         # client.subscribe("UP4G/SmartEVsafe")

@@ -107,7 +107,8 @@ def on_message(client, userdata, msg):
             data_send = json.dumps(data_pong)
             #client.publish("TUP4G/SmartEVsafe",data_send)
         if ser == "EV8cfe4443fc":
-
+            cmd = int(data_json["command_type"])
+            print ("command_tyep:", cmd)
             print("Data decryptred: ", data_decrypt)
         else:
             cmd = int(data_json["command_type"])

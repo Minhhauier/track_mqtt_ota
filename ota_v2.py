@@ -7,11 +7,11 @@ import respond
 import json
 import ota
 
-Current_env = "TEST" #  PROD or DEV or TEST - môi trường thiết bị hiện tại
+Current_env = "PROD" #  PROD or DEV or TEST - môi trường thiết bị hiện tại
 Updated_env = "PROD" # PROD or DEV or TEST - môi trường sau khi OTA
-Serial_number = "abc" # serial_number của thiết bị
+Serial_number = "EV8cfe4443fc" # serial_number của thiết bị
 broker_address = "broker.chtlab.us"
-link_file_bin = "http://ota1.chtlab.us/dev/Essen_4g_prod/Essen_4g_prod_v1_0_3.bin"
+link_file_bin = "http://vn-fpt.azcloudstorage.com/dev/Essen_4g_prod/Essen_4g_prod_v_1_1_3_testfixota.bin"
 my_key = bytes([
     0x35, 0x70, 0x7A, 0x63, 0x74, 0x68, 0x61, 0x50,
     0x54, 0x34, 0x6C, 0x4C, 0x36, 0x4C, 0x49, 0x66,
@@ -22,8 +22,8 @@ my_key = bytes([
 
 
 def on_connect(client, userdata, flags, rc):
-    cur_topic = "PUP4G/SmartEVsafe"
-    upd_topic = "PUP4G/SmartEVsafe"
+    cur_topic = "PUP/SmartEVsafe"
+    upd_topic = "PUP/SmartEVsafe"
     ota_topic = "abc"
     if Current_env == "PROD":
         cur_topic = "PUP4G/SmartEVsafe"
@@ -51,9 +51,9 @@ def on_message(client, userdata, msg):
     try:
         payload = msg.payload.decode()
         data_json = json.loads(payload)
-        data_decrypt=respond.giai_ma_chuan(data_json,my_key)
+        data_decrypt = respond.giai_ma_chuan(data_json,my_key)
         ser = data_json["serial_number"]
-        # print(ser)
+        print(ser)
         if ser == Serial_number:
             print(ser)
             print("Data decryptred: ", data_decrypt)

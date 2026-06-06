@@ -8,7 +8,7 @@ import json
 import ota
 
 
-serial_number = "abc"
+serial_number = "EV8cfe4443fc"
 # 1. Khởi tạo Client
 
 # 2. Kết nối tới Broker (thay địa chỉ IP và Port tương ứng)
@@ -78,30 +78,35 @@ def on_connect(client, userdata, flags, rc):
     if rc == 0:
         print("✅ Kết nối thành công!")
         # Đăng ký nhận dữ liệu từ chủ đề (topic) này
-        sub_topic = "TEVsafe_"+serial_number
+        sub_topic = "EVsafe_"+serial_number
         client.subscribe(sub_topic)
         client.subscribe("PUP4G/SmartEVsafe")
-        client.subscribe("PUP/SmartEVsafe")
+        # client.subscribe("PUP/SmartEVsafe")
+        # client.subscribe("PSU/SmartEVsafe")
+        # client.subscribe("PSU4G/SmartEVsafe")
+        # client.subscribe("PEVsafe_EV4f00754c3c")
+        # client.subscribe("PEVsafe_EV1d64464f88")
         # client.subscribe("CAMAI/Detectfire")
         # client.subscribe("EVsafe_EV4f00a2bf68")
         # client.subscribe("UP4G/SmartEVsafe")
         # client.subscribe("TUP4G/SmartEVsafe")
-        # ota.send_message_ota(ota.link_ota)
     else:
         print(f"❌ Kết nối thất bại, mã lỗi: {rc}")
 def on_message(client, userdata, msg):
     try:
         payload = msg.payload.decode()
+        # print("Payload: ",payload)
         data_json = json.loads(payload)
+        # print("Data: ",data_json)
         data_decrypt=respond.giai_ma_chuan(data_json,my_key)
-        print("Data decryptred: ", data_decrypt)
-    #    print("data: ",data_json)
+        #print("Data decryptred: ", data_decrypt)
+    #   print("data: ",data_json)
         ser = data_json["serial_number"]
-        print(ser)
+        #print(ser)
         if ser == "broadcast":
             data_send = json.dumps(data_pong)
-            client.publish("TUP4G/SmartEVsafe",data_send)
-        if ser == "EV013b9cc4ac":
+            #client.publish("TUP4G/SmartEVsafe",data_send)
+        if ser == "EV8cfe4443fc":
 
             print("Data decryptred: ", data_decrypt)
         else:
@@ -111,7 +116,7 @@ def on_message(client, userdata, msg):
                 time.sleep(1)
                 # print("publish")
                 data_send = json.dumps(my_payload)
-                client.publish("TUP4G/SmartEVsafe",data_send)
+               # client.publish("TUP4G/SmartEVsafe",data_send)
 
     except Exception as e:
         print("--")
